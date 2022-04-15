@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1200px;
+}
+
+.header-bg {
+    background-image: url('..//images/slider-eclipse.png');
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+i {
+    color: #fff;
+}
+
+/*-----------NAVBAR------------------*/
+
+.navbar {
+    display: flex;
+    height: 100px;
+    border-bottom: 1px dashed rgba(192, 192, 192, 0.247) ;
+}
+
+.nav_links ul{
+    color: #fff;
+}
+
+.nav_links li {
+    list-style: none;
+}
+
+.nav_icons p {
+    color: #f7b614;
+}
+/*----------HEADER------------------*/
+
+.header_text .header_text_yellow {
+    color: #f7b614;
+}
+
+.header_text h1 {
+    font-size: 80px;
+    font-weight: 700;
+}
+
+.header_text p {
+    width: 545px;
+    line-height: 34px;
+    font-size: 18px;
+}
