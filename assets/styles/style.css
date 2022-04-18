@@ -4,17 +4,18 @@
     padding: 0;
 }
 
-.container {
-    width: 1200px;
+a {
+    text-decoration: none;
 }
 
-.header-bg {
+.containerr {
     background-image: url('..//images/slider-eclipse.png');
     background-position: bottom center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100vw;
-    height: 100vh;
+    height: 1100px;
+    padding: 0 15px;
+    font-weight: 700;
 }
 
 i {
@@ -27,6 +28,7 @@ i {
     display: flex;
     height: 100px;
     border-bottom: 1px dashed rgba(192, 192, 192, 0.247) ;
+    padding-left: 15px;
 }
 
 .nav_links ul{
@@ -35,11 +37,70 @@ i {
 
 .nav_links li {
     list-style: none;
+    margin-right: 30px;
+}
+
+.nav_links li:hover {
+    cursor: pointer;
+    color: #f7b614;
+    transition: all 0.5s;
+}
+
+.active, span {
+    color: #f7b614;
+}
+
+.active {
+    position: relative;
+}
+
+.dropdown {
+    margin-top: 10px;
+    margin-left: -40px;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0x 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    background-color: #f1f1f1;
+    display: none;
+    border-radius: 25px;
+}
+
+.dropdown a {
+    color: black;
+    padding: 12px 16px;
+    display: block;
+}
+
+.dropdown a:hover {
+    background-color: #ddd;
+}
+
+.active:hover  .dropdown{ 
+    display: block;
 }
 
 .nav_icons p {
     color: #f7b614;
+    padding-left: 10px;
+    margin-right: 50px;
 }
+
+.nav_icons p:hover {
+    color: #fff;
+    transition: all 0.5s;
+}
+
+.nav_icons_2 i {
+    margin-right: 40px;
+    transition: all 0.5s;
+}
+
+.nav_icons_2 i:hover {
+    color: #f7b614;
+    cursor: pointer;
+}
+
 /*----------HEADER------------------*/
 
 .header_text .header_text_yellow {
@@ -48,11 +109,159 @@ i {
 
 .header_text h1 {
     font-size: 80px;
-    font-weight: 700;
 }
 
 .header_text p {
-    width: 545px;
+    width: 570px;
     line-height: 34px;
     font-size: 18px;
+    font-weight: 500;
+}
+
+.header_text {
+    margin-top: 90px;
+}
+
+.header_img img{
+    width: 930px;
+}
+
+/*---------Food Types ---------------*/
+
+
+.food_types i {
+    background-color: #f7b614;
+    padding: 25px;
+    border-radius: 50%;
+    color: black;
+    font-size: 25px;
+}
+
+.food_types div{
+    background-color: #f2efe6;
+    margin-right: 25px;
+    border-radius: 25px;
+    padding: 40px;
+    transform: scale(1);
+    transition: all 0.3s;
+}
+
+.food_types span {
+    color: black;
+    margin-left: 15px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.food_types {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    transition: all 2s;
+}
+
+.food_types div:hover {
+    background-color: #fff;
+    transform: scale(1.1);
+    cursor: pointer;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.popular_goods ul li{
+    border-bottom: 1px dashed black;
+    list-style: none;
+}
+
+.popular_goods a {
+    color: black;
+    transition: all 0.3s;
+}
+
+.popular_goods a:hover {
+    color: #f7b614;
+}
+
+.popular_goods p, .active {
+    color: #f7b614 !important;
+    border-bottom: none !important;
+}
+
+.popular_goods {
+    width: 550px;
+    margin: auto;
+    text-align: center;
+    margin-top: 90px;
+}
+
+
+.sit_content {
+    background-color: #202128;
+    padding: 100px;
+    line-height: 35px;
+}
+
+.sit_home img {
+    width: 50%;
+    height: auto;
+}
+
+.sit_home {
+    margin-top: 970px; 
+    color: #fff;
+}
+
+.sit_home i {
+    color: #f7b614;
+    font-size: 50px;
+    transition: all 0.4s;
+    margin-bottom: 20px;
+}
+
+.sit_icons i:hover {
+    transform: translateY(-12px);
+    cursor: pointer;
+}
+
+.sit_icons div{
+    width: 100px;
+    text-align: center;
+    margin-right: 25px;
+}
+
+.sit_icons {
+    margin: 100px 0;
+}
+
+.sit_yellow {
+    color: #f7b614;
+    margin-bottom: 45px;
+}
+
+.sit_content p{
+    color: silver;
+    font-weight: 300;
+}
+
+
+.cafes_text {
+    width: 550px;
+    margin: auto;
+    text-align: center;
+    margin-top: 90px;
+}
+
+.cafes_text p {
+    font-size: 16px;
+    color: #f7b614;
+    font-weight: 600;
+}
+
+.cafes_grid {
+    display: flex;
+}
+
+.cafes_grid_1 {
+    height: 100%;
+    width: 40%;
 }
