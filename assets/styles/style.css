@@ -257,11 +257,3 @@ i {
     font-weight: 600;
 }
 
-.cafes_grid {
-    display: flex;
-}
-
-.cafes_grid_1 {
-    height: 100%;
-    width: 40%;
-}
